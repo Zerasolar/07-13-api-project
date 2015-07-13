@@ -6,7 +6,7 @@ get "/list_assignments" do
   erb :"assignments/list_assignments"
 end
 
-get "/save_assignments" do
+get "/save_assignment" do
   a = Assignment.new(params)
   
     @new_assignment = Assignment.add({"name" => params["name"], "description" => params["description"], "github_link" =>["github_link"]})

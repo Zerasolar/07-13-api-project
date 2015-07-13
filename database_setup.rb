@@ -1,5 +1,5 @@
 # Load/create the database for the dvd_owners project.
-DATABASE = SQLite3::Database.new("gravityfallquiz.db")
+DATABASE = SQLite3::Database.new("code_assignments.db")
 # Making the tables
 DATABASE.execute("CREATE TABLE IF NOT EXISTS assignments (id INTEGER PRIMARY KEY, name STRING, description STRING, github_link STRING);")
 

@@ -1,0 +1,10 @@
+<h1>The list of Assignments</h1>
+
+<ul>
+  <% Assignment.all.each do |list| %>
+  <p><li><%= "#{list.id} - #{list.name} - #{list.description} - #{list.github_link}"%></li>
+  </p>
+  <% end %>
+</ul>
+  
+<a href="/assignment_menu">Back</a>

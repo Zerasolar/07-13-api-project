@@ -1,0 +1,8 @@
+<h1> Click on the Assignment you want to change </h1>
+
+<ul>
+  <% Assigment.all.each do |list| %>
+  <li><a href="/change_assignment_form/<%= list.id %>">Name: <%=list.name%> Description <%=list.description%></a></li>
+  <% end %>
+</ul>
+<a href="/assignment_menu">Back</a>

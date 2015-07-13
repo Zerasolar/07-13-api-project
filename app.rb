@@ -13,6 +13,7 @@ require_relative "models/link.rb"
 require_relative "models/partner.rb"
 
 # Controllers
+require_relative "controllers/main.rb"
 require_relative "controllers/assignments.rb"
 require_relative "controllers/links.rb"
 require_relative "controllers/partners.rb"
