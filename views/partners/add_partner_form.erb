@@ -1,0 +1,17 @@
+<h1> Adding a Partner </h1>
+
+<form action= "/save_partner">
+  
+  <p> Assignment: <select name="aname"></p>
+    <%Assignment.all.each do |assignment| %>
+    <option value="<%= assignment.id %>"> <%= assignment.name %></option>
+    <% end %>
+  </select><br><br>
+  
+  Name of Partner<br>
+  <input type "text" placeholder="" name="partner"><br>
+  
+  <input type= "submit">
+</form>
+
+<a href="/partner_menu">Back</a>

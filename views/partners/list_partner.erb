@@ -1,0 +1,10 @@
+<h1>The list of Partner</h1>
+
+<ul>
+  <% Partner.all.each do |list| %>
+  <p><li><%= "#{list.id} - #{list.name}"%></li>
+  </p>
+  <% end %>
+</ul>
+  
+<a href="/partner_menu">Back</a>

@@ -3,13 +3,12 @@ get "/add_partner" do
 end
 
 get "/list_partners" do
-  erb :"partners/list_assignments"
+  erb :"partners/list_partner"
 end
 
-get "/save_partners" do
-  p = Partner.new(params)
-  
-    @new_partner = Partner.add({"assignment_id" => params["assignment_id"], "name" => params["name"]})
+get "/save_partner" do
+  assignmentid = Assignment.new(params["name"])
+    @new_partner = Partner.add({"assignment_id" => params["aname"], "name" => params["name"]})
     erb :"partners/partner_added"
 end
 

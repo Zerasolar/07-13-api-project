@@ -1,0 +1,8 @@
+<h1> Click on the Link you want to change </h1>
+
+<ul>
+  <% Link.all.each do |list| %>
+  <li><a href="/change_link_form/<%= list.id %>">Assignment: <%list.assignment_id%> - Articles: <%list.article%> - Video: <%=list.video%></a></li>
+  <% end %>
+</ul>
+<a href="/link_menu">Back</a>

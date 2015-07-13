@@ -6,10 +6,9 @@ get "/list_links" do
   erb :"links/list_links"
 end
 
-get "/save_links" do
-  l = Link.new(params)
-  
-    @new_link = Link.add({"assignment_id" => params["assignment_id"], "article" => params["article"], "video" =>["video"]})
+get "/save_link" do
+  assignmentid = Assignment.new(params["name"])
+    @new_link = Link.add({"assignment_id" => params["name"].to_i, "article" => params["article"], "video" =>params["video"]})
     erb :"links/link_added"
 end
 

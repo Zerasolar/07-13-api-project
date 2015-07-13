@@ -9,7 +9,7 @@ end
 get "/save_assignment" do
   a = Assignment.new(params)
   
-    @new_assignment = Assignment.add({"name" => params["name"], "description" => params["description"], "github_link" =>["github_link"]})
+    @new_assignment = Assignment.add({"name" => params["name"], "description" => params["description"], "github_link" => params["github_link"]})
     erb :"assignments/assignment_added"
 end
 

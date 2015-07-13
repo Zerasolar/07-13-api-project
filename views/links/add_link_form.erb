@@ -1,0 +1,21 @@
+<h1> Adding a Link </h1>
+
+<form action= "/save_link">
+  
+  <p> Assignment: <select name="name"></p>
+    <%Assignment.all.each do |assignment| %>
+    <option value="<%= assignment.id %>"> <%= assignment.name %></option>
+    <% end %>
+  </select><br><br>
+  
+  Link of the Article<br>
+  <input type "text" placeholder="" name="article"><br>
+  
+  Link of the Video<br>
+  <input type "text" placeholder="" name="video"><br><br>
+  
+  
+  <input type= "submit">
+</form>
+
+<a href="/link_menu">Back</a>
