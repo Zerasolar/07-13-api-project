@@ -17,3 +17,6 @@ end
 get "/partner_menu" do
   erb :"partners/partner_menu"
 end
+
+get "/blank" do
+end

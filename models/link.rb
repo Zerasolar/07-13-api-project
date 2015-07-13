@@ -22,4 +22,8 @@ class Link
     @article = link_options["article"]
     @video = link_options["video"]
   end
+  
+  def to_json
+    {'id' => @id, 'assignment_id' => @assignment_id, 'article' => @article, 'video' => @video}.to_json
+  end
 end

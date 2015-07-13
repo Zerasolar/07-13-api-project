@@ -2,7 +2,7 @@
 
 <form action= "/save_partner">
   
-  <p> Assignment: <select name="aname"></p>
+  <p> Assignment: <select name="name"></p>
     <%Assignment.all.each do |assignment| %>
     <option value="<%= assignment.id %>"> <%= assignment.name %></option>
     <% end %>

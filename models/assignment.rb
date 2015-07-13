@@ -8,18 +8,15 @@ class Assignment
   attr_reader :id
   attr_accessor :name, :description, :github_link
   
-  # Initializes a new member object
-  #
-  # member_options - Hash containing key/values.
-  # id - Integer Primary key in the 'members' table.
-  # name - String of the member's name in the 'members' table
-  # username (optional) - String of the member's username for the 'members' table
-  #
-  # Returns a Member object.
+
   def initialize(assignment_options={})
     @id = assignment_options["id"]
     @name = assignment_options["name"]
     @description = assignment_options["description"]
     @github_link = assignment_options["github_link"]
+  end
+  
+  def to_json
+    {'id' => @id, 'name' => @name, 'description' => @description, 'github_link' => @github_link}.to_json
   end
 end

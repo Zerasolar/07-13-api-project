@@ -8,7 +8,7 @@ end
 
 get "/save_partner" do
   assignmentid = Assignment.new(params["name"])
-    @new_partner = Partner.add({"assignment_id" => params["aname"], "name" => params["name"]})
+    @new_partner = Partner.add({"assignment_id" => params["name"], "name" => params["partner"]})
     erb :"partners/partner_added"
 end
 

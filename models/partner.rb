@@ -21,4 +21,7 @@ class Partner
     @assignment_id = partner_options["assignment_id"]
     @name = partner_options["name"]
   end
+  def to_json
+    {'id' => @id, 'assignment_id' => @assignment_id, 'name' => @name}.to_json
+  end
 end
