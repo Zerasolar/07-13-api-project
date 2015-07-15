@@ -13,6 +13,7 @@ require_relative "database_setup.rb"
 require_relative "models/assignment.rb"
 require_relative "models/link.rb"
 require_relative "models/partner.rb"
+require_relative "models/user.rb"
 
 # Controllers
 require_relative "controllers/api_controller.rb"
@@ -20,3 +21,4 @@ require_relative "controllers/main.rb"
 require_relative "controllers/assignments.rb"
 require_relative "controllers/links.rb"
 require_relative "controllers/partners.rb"
+require_relative "controllers/users.rb"

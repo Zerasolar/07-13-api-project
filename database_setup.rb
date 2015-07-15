@@ -7,4 +7,6 @@ DATABASE.execute("CREATE TABLE IF NOT EXISTS links (id INTEGER PRIMARY KEY, assi
 
 DATABASE.execute("CREATE TABLE IF NOT EXISTS partners (id INTEGER PRIMARY KEY, assignment_id INTEGER, name STRING)")
 # Get results as an Array of Hashes.
+
+DATABASE.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, email STRING, password STRING)")
 DATABASE.results_as_hash = true
