@@ -4,7 +4,6 @@ get "/api/assignments" do
   Assignment.all.each do |assignment|
     @assignment.push(assignment.to_json)
   end
-  binding.pry
   json @assignment
 end
   

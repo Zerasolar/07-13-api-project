@@ -18,5 +18,6 @@ get "/partner_menu" do
   erb :"partners/partner_menu"
 end
 
-get "/api" do
+get "/" do
+  erb :"home"
 end
