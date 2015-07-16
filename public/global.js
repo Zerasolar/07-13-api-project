@@ -40,7 +40,7 @@
         var li = document.createElement("li")
         li.className ="info";
         li.setAttribute("id", "info" + list.id)
-        li.innerText = list.name; 
+        li.innerText = list.description + String.fromCharCode(13) + list.github_link;
         a.appendChild(li);
                 
 
