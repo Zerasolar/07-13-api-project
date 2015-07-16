@@ -1,0 +1,7 @@
+.info {
+  display: none;
+}
+
+.info.show {
+  display: block;
+}
